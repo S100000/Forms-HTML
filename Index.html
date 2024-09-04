@@ -6,63 +6,85 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="fname">First name:</label><br>
+
+    <form action="https://www.w3schools.com/action_page.php">
+        <b>Data:</b>
+        <input type="date"><br><br>
+
+        <b>Dados de Acesso:</b><br>
+        <label for="fname">Usuário:</label><br>
         <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br><br>
+        <label for="pass">Senha:</label><br>
+        <input type="password" id="pass" name="pass"><br><br>
+   
+        <b>Dados Pessoais:</b><br>
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco"><br><br>
+        <label for="num">Número:</label><br>
+        <input type="number" id="num" name="num"><br><br>
+        <label for="comp">Complemento:</label><br>
+        <input type="text" id="comp" name="comp"><br><br>
+        <label for="Cidade">Cidade</label><br>
+        <input list="cidade" name="cidade">
+            <datalist id="cidade">
+                <option value="Araçoiaba da Serra">
+                <option value="Sorocaba">
+                <option value="Capela do alto">
+                <option value="Salto">
+                <option value="Itu">
+                <option value="São Paulo">
+                <option value="Itapetininga">
+            </datalist><br><br>
+        <label for="Estado">Estado:</label><br>
+        <select id="estado" name="estado">
+            <option value="sao paulo">São Paulo</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Espirito santo">Espírito Santo</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Goiás">Goiás</option>
+        </select><br><br>
+        <label for="cep">CEP:</label><br>
+        <input type="number" id="cep" name="cep"><br><br>
+
+        <b>Gênero</b><br>
+        <input type="radio" id="masc" name="masc">
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="fem" name="fem">
+        <label for="fem">Feminino</label><br>
+        <input type="radio" id="nao" name="nao">
+        <label for="nao">Prefiro não dizer</label><br><br>
+   
+        <b>Curso:</b><br>
+        <input type="checkbox" id="course1" name="course1" value="ADS">
+        <label for="course1">ADS</label><br>
+        <input type="checkbox" id="course2" name="course2" value="Jogos">
+        <label for="course2">Jogos</label><br>
+        <input type="checkbox" id="course3" name="course3" value="Gestão TI">
+        <label for="course3">Gestão de TI</label><br>
+        <input type="checkbox" id="course4" name="course4" value="Banco de dados">
+        <label for="course3">Banco de dados</label><br><br>
+
+        <b>Gênero:</b><br>
+        <input type="radio" id="masc" name="masc">
+        <label for="masc">Masculino</label><br>
+        <input type="radio" id="fem" name="fem">
+        <label for="fem">Feminino</label><br>
+        <input type="radio" id="nao" name="nao">
+        <label for="nao">Prefiro não dizer</label><br><br>
+
+        <b>Modelo:</b><br>
+        <input type="radio" id="pres" name="pres">
+        <label for="pres">Presencial</label><br>
+        <input type="radio" id="ead" name="ead">
+        <label for="ead">EAD</label><br>
+        <input type="radio" id="semi" name="semi">
+        <label for="semi">Semi presencial</label><br><br>
+
+        <input type="submit" value="Submit">
     </form>
-
-    <form>
-        <b>Favorite Language:</b><br>
-        <input type="radio" id="html" name="fav_language" value="HTML" checked>
-        <label for="html">HTML</lable><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="js" name="fav_language" value="JavaScript">
-        <label for="js">JavaScript</label><br><br>
-    </form>
-
-    <form>
-        <b>Transport:</b><br>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label>
-    </form>
-
-    <form action="">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit"> <br><br>
-    </form>
-
-    <input type="button" value="Click me" onclick="alert('Ola')">
-    <br><br>
-    <label for="cars">Choose a car:</label>
-    <select id="cars" name="cars">
-    <option value="selecione">selecione</option>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-    </select>
-    <br><br>
-
-    <form action="">
-        <input list="browsers" name="browser">
-        <datalist id="browsers">
-       <option value="Internet Explorer">
-       <option value="Firefox">
-       <option value="Chrome">
-       <option value="Opera">
-       <option value="Safari">
-        </datalist>
-        <input type="submit">
-       </form>
+    
 </body>
 </html>
